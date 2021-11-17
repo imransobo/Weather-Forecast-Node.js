@@ -1,0 +1,77 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("https://www.nsta.org/sites/default/files/2020-09/Bhattachayra_hero_1200px.jpg");
+  background-size: cover;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#temp {
+  color: lightslategrey;
+  font-weight: bold;
+}
+
+#opis {
+  color: lightslategrey;
+  font-weight: bold;
+}
+#pritisak {
+  color: red;
+  font-weight: bold;
+}
+#naslovGrad {
+  color: darkslateblue;
+}
+
+#divTekst {
+  width: 800px;
+  background: navy;
+
+}
+
+#divGrad {
+  width: 800px;
+  background-color: beige;
+  opacity: .8;
+}
+
+#pocetnaNaslov {
+  color: white;
+  font-size: 70px;
+  font-family: Cambria;
+  font-weight: bold;
+}
+
+#pocetnaTekst {
+  color: white;
+  font-size: 20px;
+  font-family: Cambria;
+
+
+}
+
+#prognozaTriDana {
+  width: 800px;
+  background-color: beige;
+  opacity: .8;
+
+}
+
+#prognozaTriDanaTekst {
+  color: blue;
+  font-weight: bold;
+}
+
+#forma {
+  width: 500px;
+  padding: 50px;
+  background: transparent;
+  position: center
+}
+
+#label {
+  color: white;
+}

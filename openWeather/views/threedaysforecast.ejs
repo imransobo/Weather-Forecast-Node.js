@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prognoza za 3 dana</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div id="prognozaTriDana">
+      <h1><%="Prognoza za iduća tri dana za grad " + grad %> </h1>
+      <p id="prognozaTriDanaTekst"><%= "Trenutna temperatura: " + prognoza.temp %></p>
+      <p id="prognozaTriDanaTekst"><%= "Vlaznost zraka: " +  prognoza.humidity %></p>
+      <p id="prognozaTriDanaTekst"><%=  "Trenutni pritisak: " + prognoza.pressure %></p>
+      <p id="prognozaTriDanaTekst"><%=  "Opis vremena: " + prognoza.description %></p>
+
+    </div>
+  </body>
+</html>

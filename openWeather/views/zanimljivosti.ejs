@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%=  %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div id="divGrad">
+      <h1 id="naslovGrad">Trenutna vremenska prognoza za grad <%= grad %> </h1>
+      <h2 id="temp"> <%= "Temperatura: " + temp  %></h2>
+      <h2 id="opis"> <%= "Opis: " + opis  %></h2>
+      <h2 id="pritisak"> <%= "Trenutni pritisak: " + pritisak + " hpa"  %></h2>
+    </div>
+    <div id="divGrad">
+      <h2 id="naslovGrad">Dodatne informacije</h2>
+      <h2 id="infoPozivni"><%= "Pozivni broj zemlje: " + pozivniBroj %></h2>
+      <h2 id="infoValuta"><%= "Valuta zemlje: " + valuta %></h2>
+
+    </div>
+  </body>
+</html>
