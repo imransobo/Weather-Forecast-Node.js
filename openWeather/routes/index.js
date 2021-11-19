@@ -25,7 +25,6 @@ var trenutnaTemperatura;
 var trenutniPritisak;
 var opisVremena;
 
-//2. Kreirati rutu koja otvara stranicu sa pregledno prikazanim podacima o vremenu u Sarajevu.
 
 router.get('/sarajevo', function(req, res, next) {
   weather.setUnits('metric');
@@ -48,8 +47,6 @@ router.get('/sarajevo', function(req, res, next) {
 
 
 
-//3. Kreirati rutu koja pregledno prikazuje podatke o vremenu u nekom gradu. Grad se proslijedi kroz
-// rutu. Osim naziva grada, proslijedi se i skraćenica za državu
 
 router.get('/:grad/:drzava', function(req, res, next) {
   var imeGrada = req.params.grad;
@@ -79,10 +76,6 @@ router.get('/:grad/:drzava', function(req, res, next) {
 
 
 
-
-//4. Kreirati rutu koja pregledno prikazuje podatke o vremenu u gradu u naredna tri dana. Grad se
-// proslijedi kroz rutu. Osim naziva grada, proslijedi se i skraćenica za državu.
-
 //nakon refresha radi
 var triDana;
 router.get('/tridana/:grad/:drzava', function(req, res, next) {
@@ -108,11 +101,6 @@ router.get('/tridana/:grad/:drzava', function(req, res, next) {
 
 
 
-
-
-//5. Kreirati rutu koja prikazuje formu sa dva input elementa. Prvi element predstavlja grad, drugi
-// predstavlja državu. Države se biraju iz selecta, dok se ime grada unosi kao tekst. Prikazuje se vrijeme
-// u tom gradu.
 
 
 router.get('/forma/:grad/:drzava', function(req, res, next) {
@@ -170,12 +158,6 @@ router.post('/posalji', function(req, res, next) {
 
 
 
-
-
-//6. Pronaći JSON sa svim glavnim gradovima na svijetu. Kreirati HTML stranicu u kojoj se prikazuje
-// dropdown sa državama i dugmić. Klikom na dugmić, otvara se nova HTML stranica koja prikazuje
-// podatke o vremenu u glavnom gradu izabrane države. Pronaći prikladan modul koji prikazuje neke
-// zanimljive činjenice ili dodatne podatke o izabranoj državi ili gradu
 
 router.get('/sestizadatak/:grad/:drzava', function(req, res, next) {
     var imeGrada = req.params.grad;
